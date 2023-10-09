@@ -26,6 +26,7 @@ with open('C:/Users/Edo DF/Desktop/bootcamp data engineer/Project/Project_3/sour
 conn.commit()
 
 #insert table - pake pandas
+#gak perlu create table
 #kalo datanya ga ada perubahan apa2 (Transform) dan cuma extrac dan load aja jgn pake pandas soalnya makan resouce yg banyak
 df = pd.read_csv('C:/Users/Edo DF/Desktop/bootcamp data engineer/Project/Project_3/source/users_w_postal_code.csv', sep=',')
 engine = create_engine('postgresql://postgres:postgres@localhost:5432/postgres')
